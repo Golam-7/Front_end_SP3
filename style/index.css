@@ -7,6 +7,8 @@
   --color-white: #ffffff;
 }
 
+/* Header Start */
+
 .header-container {
   width: 100%;
   display: flex;
@@ -24,3 +26,32 @@
   color: var(--color-dark);
   margin-bottom: 1.3rem;
 }
+/* Header End */
+/* Sales Start */
+
+#timer {
+  font-size: 2.6rem;
+  margin-top: 0.7rem;
+}
+
+.container-btn {
+  width: 100%;
+  text-align: center;
+}
+
+.container-btn-a {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 1.5rem 3rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.container-btn-a:hover {
+  background-color: var(--color-dark);
+}
+/* Sales End */
