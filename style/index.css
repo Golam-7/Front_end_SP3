@@ -26,6 +26,20 @@
   color: var(--color-dark);
   margin-bottom: 1.3rem;
 }
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #db4444; */
+  height: 500px;
+}
+.header-filter {
+  width: 20%;
+}
+.carousel {
+  width: 80%;
+}
 /* Header End */
 /* Sales Start */
 
