@@ -99,3 +99,12 @@
   color: var(--color-white);
 }
 /* Categories End */
+/* Best selling Start */
+.same-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 99%;
+  margin-bottom: 3rem;
+}
+/* Best selling End */
