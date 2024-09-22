@@ -147,3 +147,36 @@
   background-color: #084625;
 }
 /* Trending End */
+/* Gallery Start */
+
+.gallery {
+  margin-top: 3rem;
+}
+
+.gallery-caption {
+  position: relative;
+  bottom: 12rem;
+  left: 3rem;
+  width: 50%;
+}
+
+.gallery-caption h4,
+.gallery-caption p,
+.gallery-btn {
+  color: var(--color-white);
+}
+
+.gallery-btn {
+  text-decoration: underline;
+}
+
+.gallery-23 {
+  position: relative;
+  bottom: 10rem;
+}
+
+.gallery-caption h4 {
+  font-size: 2rem;
+}
+
+/* Gallery End */
