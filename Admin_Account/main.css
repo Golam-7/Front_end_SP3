@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
 }
+/* Start Store Details Page */
+
 .container {
     display: flex;
 }
@@ -110,3 +112,22 @@ body {
     background-color: #db4444;
     color: #fff;
 }
+
+/* End Store Details page */
+
+/* Start Location page */
+
+.info-box {
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.info-box i {
+    margin-right: 10px;
+}
+
+/* End Location page */
