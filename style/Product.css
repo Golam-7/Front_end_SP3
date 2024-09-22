@@ -10,15 +10,10 @@
   text-align: center;
   border-radius: 5px;
   transition: 0.3s ease-in-out;
-  /* display: none; */
 }
-
+ 
 .add-too-cart:hover {
   background-color: white;
   color: black;
   border-color: black; 
-}
-
-.card-img:hover  + .add-too-cart {
-  display: block; 
 }
