@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+/* Start Store Details Page */
+
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+    padding: 20px;
+}
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar ul li a.active {
+    background-color: #db4444;
+    color: #fff;
+}
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+.content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.form-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+.form-section h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #db4444;
+    font-weight: bold;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.form-group input, .form-group select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+}
+.form-group input[type="text"], .form-group input[type="email"], .form-group input[type="tel"] {
+    width: calc(50% - 20px);
+}
+.form-group .half-width {
+    display: inline-block;
+    width: calc(50% - 10px);
+}
+.form-group .half-width:first-child {
+    margin-right: 20px;
+}
+.form-group .alert {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border: 1px solid #ffeeba;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-actions .discard {
+    background-color: #e0e0e0;
+    color: #333;
+    margin-right: 10px;
+}
+.form-actions .save {
+    background-color: #db4444;
+    color: #fff;
+}
+
+/* End Store Details page */
+
+/* Start Location page */
+
+.info-box {
+    background-color: #e0f7fa;
+    color: #00796b;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.info-box i {
+    margin-right: 10px;
+}
+
+/* End Location page */
