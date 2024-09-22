@@ -147,3 +147,53 @@
   background-color: #084625;
 }
 /* Trending End */
+/* Gallery Start */
+
+.gallery {
+  margin-top: 3rem;
+}
+
+.gallery-caption {
+  position: relative;
+  bottom: 12rem;
+  left: 3rem;
+  width: 50%;
+}
+
+.gallery-caption h4,
+.gallery-caption p,
+.gallery-btn {
+  color: var(--color-white);
+}
+
+.gallery-btn {
+  text-decoration: underline;
+}
+
+.gallery-23 {
+  position: relative;
+  bottom: 10rem;
+}
+
+.gallery-caption h4 {
+  font-size: 2rem;
+}
+
+/* Gallery End */
+/* Service start */
+.services {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  text-align: center;
+  margin-bottom: 7rem;
+}
+.service-title {
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+.service-img {
+  margin-bottom: 2rem;
+}
+/* Service End */
