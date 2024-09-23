@@ -17,22 +17,28 @@
 
 <body>
   <!-- Navbar Start -->
-  <nav class="nav">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">EXCLUSIVE</a>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
-      </ul>
-      <div class="nav-items">
-        <form action="#" class="nav-form">
-          <input type="text" class="nav-input" placeholder="Search Here...">
-          <i class="nav-search fas fa-magnifying-glass"></i>
-        </form>
-        <i class="nav-heart fa-regular fa-heart"></i>
-        <i class="nav-cart fa fa-cart-shopping"></i>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid container">
+      <a class="navbar-brand nav-logo" href="#">EXCLUSIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+        </ul>
+        <div class="d-flex align-items-center nav-items">
+          <form class="d-flex nav-form">
+            <input class="form-control me-2 nav-input" type="search" placeholder="Search Here..." aria-label="Search">
+            <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass"></i></button>
+          </form>
+          <i class="fa-regular fa-heart ms-3 nav-heart"></i>
+          <i class="fa fa-cart-shopping ms-3 nav-cart"></i>
+        </div>
       </div>
     </div>
   </nav>
