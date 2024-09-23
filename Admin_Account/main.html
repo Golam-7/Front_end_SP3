@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Store Settings</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- <link rel="stylesheet" href="../style/layout.css"> -->
   <link rel="stylesheet" href="main.css">
-
   <div id="navbar-container"></div>
 
-<script>
-  fetch('../layout.html')
-    .then(response => response.text())
-    .then(html => {
-      document.getElementById('navbar-container').innerHTML = html;
-    });
-</script>
+  <script>
+    fetch('../layout.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('navbar-container').innerHTML = html;
+      });
+  </script>
 
 </head>
 
@@ -201,4 +201,5 @@
     </div>
   </div>
 </body>
+
 </html>

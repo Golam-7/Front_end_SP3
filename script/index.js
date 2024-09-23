@@ -1,3 +1,5 @@
+//timer
+
 var countDownDate = new Date("oct 7, 2024 15:37:25").getTime();
 
 var x = setInterval(function () {
@@ -23,4 +25,12 @@ var swiper = new Swiper(".myHeader", {
     el: ".swiper-header-scrollbar",
     hide: true
   }
+});
+
+// animation
+
+ScrollReveal().reveal(".header", {
+  origin: "bottom",
+  delay: 200,
+  opacity: 0
 });
