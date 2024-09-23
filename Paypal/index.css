@@ -1,0 +1,94 @@
+.content{
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative
+}
+.card-body
+{
+    background-color: #f9fafd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+}
+.me
+{
+  font-size: 15px;
+  color: #848588;
+  font-weight: 700;
+  letter-spacing: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;  
+
+}
+.Credit
+{
+  color: #000000;
+  font-style:inherit;
+  padding: 1px;
+  font-size: 20px;
+
+}
+.mb-4
+{
+  font-size: 15px;
+  color: #848588;
+  font-weight: 700;
+  letter-spacing: 0px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;  
+}
+.flex
+{
+  display: flex;
+    width: 100%;
+    gap: 6px;
+}
+.content
+{
+  display: flex;
+    width: 100%;
+    gap: 6px;
+}
+.card-num,.form-label
+{
+  color: #151617 ;
+  letter-spacing: 0.04em;
+  text-align: justify;
+}
+.form-control
+{
+  margin: 1px 2px;
+  padding-left: 2px;
+}
+.col-6
+{
+padding: 10px;
+}
+.g-x
+{
+  margin: auto;
+}
+h5{
+  padding:  1.25rem 1rem;
+  margin-bottom: 0;
+  color: #0d0a0a;
+  background-color: #fff;
+  font-style: normal;
+  letter-spacing: normal;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
