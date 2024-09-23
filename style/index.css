@@ -181,6 +181,7 @@
 
 /* Gallery End */
 /* Service start */
+
 .services {
   width: 100%;
   display: grid;
@@ -196,4 +197,27 @@
 .service-img {
   margin-bottom: 2rem;
 }
+
 /* Service End */
+
+/* Resposive Start */
+
+@media (max-width: 1042px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header-filter {
+    display: none !important;
+  }
+  .carousel {
+    width: 100%;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Resposive End */
