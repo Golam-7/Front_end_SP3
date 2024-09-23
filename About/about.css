@@ -1,0 +1,162 @@
+:root {
+    --font-main: "Inter", "sans-serif";
+    --color-primary: #db4444;
+    --color-dark: #000000;
+    --color-gray: #7d8184;
+    --color-secondry-white: #f5f5f5;
+    --color-white: #ffffff;
+}
+
+/* about start */
+.story-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    grid-gap: 6rem;
+}
+
+.story-content-titel {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.story-content-p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.story-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-outline {
+    padding: 2rem;
+    border-radius: 2px;
+    border: 1px solid var(--color-gray);
+}
+
+.services-num {
+    margin-top: 1.5rem;
+
+
+}
+
+.service-pp {
+    font-size: 1.5rem;
+}
+
+.active-service {
+    border-radius: 2px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* team */
+.team-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 6rem;
+}
+
+.team-img-wrapper {
+    width: 350px;
+    height: 350px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.team-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.team-name {
+    font-size: 25px;
+    margin: 1.5rem 0rem;
+}
+
+.social-icons {
+    display: flex;
+
+    margin-top: 8px;
+
+}
+
+.social-icons a {
+    margin: 0 8px;
+    color: var(--color-dark);
+    transition: transform 0.2s;
+
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a:active {
+    transform: scale(0.9);
+}
+
+.bullets {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 120%;
+    transform: translateX(-50%);
+}
+
+.bullets li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3px;
+}
+
+.bullets li.active {
+    background-color: var(--color-primary);
+}
+
+
+
+
+/* services 2 */
+.services-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    grid-gap: 3rem;
+}
+
+.service {
+    text-align: center;
+}
+
+
+
+.service-title {
+    font-size: 2rem;
+    margin: 1.5rem 0rem;
+}
+
+.service-p {
+    font-size: 1rem;
+}
