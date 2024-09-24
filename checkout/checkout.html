@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayel/checkout.css">
+    <link rel="stylesheet" href="stayel/layout.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+<header class="header">
+    <!-- Navbar Start -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <a href="#" class="nav-logo">EXCLUSIVE</a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
+            </ul>
+            <div class="nav-items">
+                <form action="#" class="nav-form">
+                    <input type="text" class="nav-input" placeholder="Search Here...">
+                    <i class="nav-search fas fa-magnifying-glass"></i>
+                </form>
+                <i class="nav-heart fa-regular fa-heart"></i>
+                <i class="nav-cart fa fa-cart-shopping"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+</header>
+
+<main>
+    <div class="breadcrumb">
+        <p>Account / My Account / Product / View Cart / CheckOut</p>
+    </div>
+
+    <section class="checkout-section">
+        <div class="billing-details">
+            <h2>Billing Details</h2>
+            <form>
+                <label>First Name <span class="star">*</span></label>
+                <input type="text" required>
+                <label>Company Name</label>
+                <input type="text">
+                <label>Street Address<span class="star">*</span></label>
+                <input type="text" required>
+                <label>Apartment, floor, etc. (optional)</label>
+                <input type="text">
+                <label>Town/City<span class="star">*</span></label>
+                <input type="text" required>
+                <label>Phone Number<span class="star">*</span></label>
+                <input type="tel" required>
+                <label>Email Address<span class="star">*</span></label>
+                <input type="email" required>
+
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <div class="order-items">
+                <div class="item">
+                    <img src="img/g92-2-500x500%201.png"alt="Monitor">
+                    <p>HI Gamepad</p>
+                    <span style="margin-top: 20px;">$650</span>
+                </div>
+                <div class="item">
+                    <img src="img/Monitor-Cart-Small.png" alt="HI Gamepad">
+                    <p>LCD Monitor</p>
+                    <span style="margin-top: 20px;">$1100</span>
+                </div>
+            </div>
+            <div class="price-summary">
+                <div class="subtotal">
+                <p>Subtotal: </p>
+                <span class="price">$1750</span>
+                </div>
+                <div class="shopping">
+                <p>Shipping: </p>
+                <span class="price">Free</span>
+                </div>
+                <div class="total">
+                <p>Total:</p>
+                <span class="priceTotal">$1750</span>
+            </div>
+                </div>
+
+            <div class="payment-method">
+                <label><input type="radio" name="payment" checked><span class="Bank"> Bank</span>
+                <img src="img/Frame%20834.png" class="img-bank">
+                </label>
+                <label><input type="radio" name="payment"><span class="Cash"> Cash on delivery</span> </label>
+            </div>
+
+            <div class="coupon">
+                <label>Coupon Code</label>
+                <input type="text">
+                <button>Apply Coupon</button>
+            </div>
+
+            <button class="place-order">Place Order</button>
+        </div>
+    </section>
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-item">
+                <a href="#" class="footer-logo">Exclusive</a>
+                <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build an online
+                    store.</div>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-title">Support</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</li>
+                    <li class="footer-list-item">exclusive@gmail.com</li>
+                    <li class="footer-list-item">+88015-88888-9999</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-title">Account</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">My Account</li>
+                    <li class="footer-list-item">Login / Register</li>
+                    <li class="footer-list-item">Cart</li>
+                    <li class="footer-list-item">Wishlist</li>
+                    <li class="footer-list-item">Shop</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-title">Quick Link</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">Privacy Policy</li>
+                    <li class="footer-list-item">Terms Of Use</li>
+                    <li class="footer-list-item">FAQ</li>
+                    <li class="footer-list-item">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <div class="footer-copyright">&#169; Copyright 2024. All right reserved</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</main>
+</body>
+</html>
