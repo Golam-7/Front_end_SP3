@@ -243,10 +243,7 @@ ul {
 }
 .product {
   cursor: pointer;
-}
-.product .box {
-  position: relative;
-  left: 5rem;
+  max-width: 250px;
 }
 .new {
   background-color: var(--color-green) !important;
@@ -436,6 +433,9 @@ ul {
   .swiper-slide {
     display: flex;
     justify-content: center;
+  }
+  .product {
+    margin-inline: auto;
   }
 }
 

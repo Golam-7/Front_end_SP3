@@ -240,6 +240,10 @@
     transform: translateX(-50%);
     width: 80%;
     text-align: center;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
   }
 
   .gallery1,
