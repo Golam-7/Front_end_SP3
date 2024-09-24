@@ -433,7 +433,12 @@ ul {
   .nav-link {
     padding: 10px !important;
   }
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
 }
+
 /* Footer End */
 
 /* Resposive Start */
