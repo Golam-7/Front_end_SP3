@@ -269,6 +269,12 @@
     margin-top: 1rem;
     bottom: 0;
   }
+  .trending {
+    margin-inline: auto;
+  }
+  .trending-title {
+    text-align: center;
+  }
 }
 
 /* Resposive End */
