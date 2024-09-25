@@ -5,12 +5,10 @@ body {
     padding: 0;
 }
 /* Start Store Details Page */
-
-.container-location {
+.container-store {
     display: flex;
 }
 .sidebar {
-    /* width: 250px; */
     background-color: transparent;
     border-right: 1px solid #e0e0e0;
     padding: 50px;
@@ -115,7 +113,7 @@ body {
 
 /* End Store Details page */
 
-/* Start Location page */
+/* Start Location Store page */
 
 .info-box {
     background-color: #e0f7fa;
@@ -130,4 +128,4 @@ body {
     margin-right: 10px;
 }
 
-/* End Location page */
+/* End Location Store page */
