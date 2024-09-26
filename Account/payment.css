@@ -31,6 +31,9 @@
   font-size: 22px;
   color: #db4444;
   font-weight: bolder;
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin: 10px 10px;
 }
 
 .sidebar h2 {

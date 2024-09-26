@@ -12,135 +12,151 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="/style/layout.css">
+  <link rel="stylesheet" href="../style/layout.css">
   <link rel="stylesheet" href="payment.css">
+  <link rel="stylesheet" href="../style/admin.css">
 </head>
 
 <body>
   <!-- Navbar Start -->
-  <nav class="nav">
-    <div class="container nav-container">
-      <a href="#" class="nav-logo">EXCLUSIVE</a>
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
-      </ul>
-      <div class="nav-items">
-        <form action="#" class="nav-form">
-          <input type="text" class="nav-input" placeholder="Search Here...">
-          <i class="nav-search fas fa-magnifying-glass"></i>
-        </form>
-        <i class="nav-heart fa-regular fa-heart"></i>
-        <i class="nav-cart fa fa-cart-shopping"></i>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid container">
+      <a class="navbar-brand nav-logo" href="#">EXCLUSIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+        </ul>
+        <div class="d-flex align-items-center nav-items">
+          <form class="d-flex nav-form">
+            <input class="form-control me-2 nav-input" type="search" placeholder="Search Here..." aria-label="Search">
+            <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass" title="Search"></i></button>
+          </form>
+          <i class="fa-regular fa-heart ms-3 nav-heart"></i>
+          <i class="fa fa-cart-shopping ms-3 nav-cart"></i>
+        </div>
       </div>
     </div>
   </nav>
   <!-- Navbar End -->
 
+  <!-- content start -->
 
-  <!-- content start-->
-
-  <nav aria-label="breadcrumb"></nav>
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item" style="color: darkgray;">Home</li>
-      <li class="breadcrumb-item"> <a href="#" style="color: #000;">My Account</a></li>
-    </ol>
-  </nav>
-  <div class="container-payment">
-    <div class="sidebar">
-      <h2>Manage My Account</h2>
-      <ul>
-        <li><a href="index.htm">My Profile</a></li>
-        <li><a href="payment.htm" class="active">My Payments Options</a></li>
-        <li><a href="location.html">Adress Book</a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <div class="card">
-        <!-- tital -->
-        <div class="card-header">
-          <h2>Billing Details</h2>
+  <div class="container">
+    <!--  -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" style="color: darkgray;">Home</li>
+        <li class="breadcrumb-item"><a href="#" style="color: #000;">My Account</a></li>
+      </ol>
+    </nav>
+    <div class="second">
+      <div class="container-fluid" style="background-color: #ffff; display: flex;">
+        <div class="sidebar">
+          <h2>Manage My Account</h2>
+          <ul>
+            <li><a href="account.html">My Profile</a></li>
+            <li><a href="location.html">Adress Book</a></li>
+            <li><a href="payment.htm" class="active">Payments</a></li>
+          </ul>
         </div>
-        <!-- tital -->
-        <div class="card-body ">
-          <div class="form-check mb-0">
-            <input class="form-check-input" type="radio" id="paypal" name="billing" placeholder="PayPal">
-            <label class="form-check-label mb-0 d-block" for="paypal">
-              <img src="../image/OIP.jpg" height="20" alt="">
-            </label>
-          </div>
-          <p class="me">Pay with PayPal, Apple Pay, PayPal Credit and much more</p>
+        <div class="content">
+          <div class="card">
+            <!-- tital -->
+            <div class="card-header">
+              <h2>Billing Details</h2>
+            </div>
+            <!-- tital -->
+            <div class="card-body ">
+              <div class="form-check mb-0">
+                <input class="form-check-input" type="radio" id="paypal" name="billing" placeholder="PayPal">
+                <label class="form-check-label mb-0 d-block" for="paypal">
+                  <img src="../image/OIP.jpg" height="20" alt="">
+                </label>
+              </div>
+              <p class="me">Pay with PayPal, Apple Pay, PayPal Credit and much more</p>
 
-          <div class="form">
-            <input class="form-check-input" type="radio" value="" id="credit-card" checked="checked" name="billing">
-            <label class="form-check-label d-flex align-items-center mb-0" for="credit-card">
-              <span class="Credit">Credit Card</span>
-              <img class="d-none d-sm-inline-block ms-2 mt-lg-0" src="../image/icon-payment-methods.png" height="20"
-                alt="">
-            </label>
-            <p class=" mb-4">Safe money transfer using your bank accounts. Visa, maestro, discover, american express.
-            </p>
-          </div>
+              <div class="form">
+                <input class="form-check-input" type="radio" value="" id="credit-card" checked="checked" name="billing">
+                <label class="form-check-label d-flex align-items-center mb-0" for="credit-card">
+                  <span class="Credit">Credit Card</span>
+                  <img class="d-none d-sm-inline-block ms-2 mt-lg-0" src="../image/icon-payment-methods.png" height="20"
+                    alt="">
+                </label>
+                <p class=" mb-4">Safe money transfer using your bank accounts. Visa, maestro, discover, american
+                  express.
+                </p>
+              </div>
 
-          <div class="flex">
-            <div class="col-sm-6">
-              <label class="card-num" for="cardNumber">Card Number</label>
-              <input class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" type="text">
-            </div>
-            <div class="col-sm-6">
-              <label class="form-label" for="cardName">Name of Card</label>
-              <input class="form-control" id="cardName" placeholder="John Doe" type="text">
+              <div class="flex">
+                <div class="col-sm-6">
+                  <label class="card-num" for="cardNumber">Card Number</label>
+                  <input class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" type="text">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="cardName">Name of Card</label>
+                  <input class="form-control" id="cardName" placeholder="John Doe" type="text">
+                </div>
+              </div>
+              <div class="gx-3">
+                <div class="col-6 col-sm-3">
+                  <label class="form-label" for="inputCountry">Country</label>
+                  <input class="form-select mb-3" id="inputCountry" list="country-list" placeholder="Country">
+                  <datalist class="scrollbar" id="country-list">
+                    <option>Austalia</option>
+                    <option>Bangladesh</option>
+                    <option>Belarus</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Israel</option>
+                    <option>Italy</option>
+                    <option>Japan</option>
+                    <option>Korea, Republic of</option>
+                    <option>Mexico</option>
+                    <option>Philippines</option>
+                    <option>Russian Federation</option>
+                    <option>South Africa</option>
+                    <option>Thailand</option>
+                    <option>Turkey</option>
+                    <option>Ukraine</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                  </datalist>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <label class="form-label " for="zipCode">Zip Code</label>
+                  <input class="form-control" id="zipCode" placeholder="1234" type="text">
+                </div>
+                <div class="col-6 col-sm-3">
+                  <label class="form-label " for="expDate">Exp Date</label>
+                  <input class="form-control" id="expDate" placeholder="15/2024" type="text">
+                </div>
+                <div class="col-6 col-sm-3">
+                  <label class="form-label " for="cvv">CVV
+                    <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Card verification value">
+                      <span class="fa fa-question-circle"></span>
+                    </span>
+                  </label>
+                  <input class="form-control" id="cvv" placeholder="123" maxlength="3" type="text">
+                </div>
+              </div>
             </div>
           </div>
-          <div class="gx-3">
-            <div class="col-6 col-sm-3">
-              <label class="form-label" for="inputCountry">Country</label>
-              <input class="form-select mb-3" id="inputCountry" list="country-list" placeholder="Country">
-              <datalist class="scrollbar" id="country-list">
-                <option>Austalia</option>
-                <option>Bangladesh</option>
-                <option>Belarus</option>
-                <option>Brazil</option>
-                <option>Canada</option>
-                <option>China</option>
-                <option>France</option>
-                <option>Germany</option>
-                <option>India</option>
-                <option>Indonesia</option>
-                <option>Israel</option>
-                <option>Italy</option>
-                <option>Japan</option>
-                <option>Korea, Republic of</option>
-                <option>Mexico</option>
-                <option>Philippines</option>
-                <option>Russian Federation</option>
-                <option>South Africa</option>
-                <option>Thailand</option>
-                <option>Turkey</option>
-                <option>Ukraine</option>
-                <option>United Arab Emirates</option>
-                <option>United Kingdom</option>
-                <option>United States</option>
-              </datalist>
-            </div>
-            <div class="col-6 col-sm-3">
-              <label class="form-label " for="zipCode">Zip Code</label>
-              <input class="form-control" id="zipCode" placeholder="1234" type="text">
-            </div>
-            <div class="col-6 col-sm-3">
-              <label class="form-label " for="expDate">Exp Date</label>
-              <input class="form-control" id="expDate" placeholder="15/2024" type="text">
-            </div>
-            <div class="col-6 col-sm-3">
-              <label class="form-label " for="cvv">CVV
-                <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Card verification value">
-                  <span class="fa fa-question-circle"></span>
-                </span>
-              </label>
-              <input class="form-control" id="cvv" placeholder="123" maxlength="3" type="text">
-            </div>
+          <div class="form-actions">
+            <button class="discard" type="button">Discard</button>
+            <button class="save" type="button">Save Changes</button>
           </div>
         </div>
       </div>
@@ -148,7 +164,6 @@
   </div>
 
   <!-- content end -->
-
 
   <!-- Footer Start -->
   <footer class="footer">

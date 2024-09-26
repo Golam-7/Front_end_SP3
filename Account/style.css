@@ -23,6 +23,11 @@ html {
 body {
   font-family: var(--font-main);
   font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+
 }
 
 .breadcrumb
@@ -35,14 +40,40 @@ body {
 .container {
   max-width: 114rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
 }
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    margin: 0;
+.second {
+  display: flex;
+  flex-wrap: wrap;
+}
+.sidebar {
+    background-color: transparent;
+    border-right: 1px solid #e0e0e0;
+    padding: 50px;
+    width: fit-content;
+}
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+.sidebar ul {
+    list-style: none;
     padding: 0;
+}
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+.sidebar ul li a.active {
+    background-color: #db4444;
+    color: #fff;
 }
 .form {
   display: flex;
@@ -53,10 +84,25 @@ body {
   padding: 20px;
   border-radius: 20px;
   position: relative;
- 
 }
 .col-lg-5 {
-  box-shadow: 0px 1px 5px 0px;
+  /* box-shadow: 0px 1px 5px 0px; */
+  margin-left: 135px;
+}
+@media (max-width: 992px) {
+  .col-lg-5 {
+    margin-left: 55px;
+  }
+}
+@media (max-width: 768px) {
+  .col-lg-5 {
+    margin-left: 0px;
+    max-width: 100%;
+  }
+  .sidebar {
+    /* display: none; */
+    width: 100%;
+  }
 }
 .title {
   font-size: 28px;
@@ -133,72 +179,21 @@ body {
 .form label .input:valid + span {
   color: green;
 }
-
-/* From Uiverse.io by cssbuttons-io */ 
-
-button {
-  appearance: button;
-  background-color: #db4444;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
+.form-actions button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 13px 19px;
-  text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
- }
- 
- button:after {
-  background-clip: padding-box;
+}
+.form-actions .discard {
+  background-color: #e0e0e0;
+  color: #333;
+  margin-right: 10px;
+}
+.form-actions .save {
   background-color: #db4444;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
- }
- 
- button:main, button:focus {
-  user-select: auto;
- }
- 
- button:hover:not(:disabled) {
-  filter: brightness(1.1);
- }
- 
- button:disabled {
-  cursor: auto;
- }
- 
- button:active:after {
-  border-width: 0 0 0px;
- }
- 
- button:active {
-  padding-bottom: 10px;
- }
+  color: #fff;
+}
 
 @keyframes pulse {
   from {
