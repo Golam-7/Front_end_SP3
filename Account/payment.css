@@ -106,11 +106,11 @@
   padding-left: 16px;
 }
 
-.flex {
+/* .flex {
   display: flex;
   width: 100%;
   gap: 6px;
-}
+} */
 
 .content {
   display: flex;
@@ -148,4 +148,29 @@ h5 {
   font-size: 1.2rem;
   line-height: 1.2;
   font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column; 
+  }
+
+  .sidebar {
+    width: 100%; 
+  }
+
+  .content {
+    padding: 20px; 
+  }
+
+  .form-control {
+    font-size: 18px; 
+  }
+
+  
+}
+.flex {
+  display: fl;
+  justify-content: space-between; 
+  align-items: center; 
 }
