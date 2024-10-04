@@ -71,3 +71,18 @@ header nav ul li {
     width: auto;
     margin: 10px auto;
 }
+
+/* Responsive adjustments for form */
+@media (max-width: 1140px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .contact-info, .contact-form {
+        width: 100%;
+        margin: 5px 0;
+    }
+    textarea {
+        width: 100% !important;
+    }
+}
