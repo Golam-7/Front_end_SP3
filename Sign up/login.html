@@ -40,8 +40,8 @@
                             aria-label="Search">
                         <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass"></i></button>
                     </form>
-                    <i class="fa-regular fa-heart ms-3 nav-heart"></i>
-                    <i class="fa fa-cart-shopping ms-3 nav-cart"></i>
+                    <i class="fa-regular fa-heart ms-3 nav-heart actived"></i>
+                    <i class="fa fa-cart-shopping ms-3 nav-cart actived"></i>
                 </div>
             </div>
         </div>
@@ -54,37 +54,80 @@
                 <img src="./img/mob.png" alt="" class="sign-img">
             </div>
             <div class="sign-content">
-                <form action="" class="sign-form">
+                <form onsubmit="login(event)" class="sign-form">
                     <h2 class="form-title">Login to your account</h2>
                     <p class="sign-p">Enter your details below</p>
 
                     <div class="form-content">
-                        <input type="email" placeholder="Email" class="form-input">
+                        <input type="email" id="email" placeholder="Email" class="form-input" required>
                     </div>
                     <div class="form-content form-pass">
-                        <input type="password" placeholder="Password" class="form-input">
+                        <input type="password" id="password" placeholder="Password" class="form-input" required>
                     </div>
                     <div class="form-content">
-                        <button class="form-btn"> <a href="#" class="form-link">Login</a></button>
-
+                        <button type="submit" class="form-btn">Login</button>
                     </div>
                     <div class="form-content">
                         <span>Don't have an account? <a href="./sign up.html" class="form-sign-link">Register</a></span>
                     </div>
                 </form>
+                <div id="result"></div>
             </div>
         </div>
-
     </section>
-    <!-- end sign up -->
 
+    <!-- end sign up -->
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-item">
+                <a href="#" class="footer-logo">Exclusive</a>
+                <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build
+                    an online
+                    store.</div>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-title">Support</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</li>
+                    <li class="footer-list-item">exclusive@gmail.com</li>
+                    <li class="footer-list-item">+88015-88888-9999</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-title">Account</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">My Account</li>
+                    <li class="footer-list-item">Login / Register</li>
+                    <li class="footer-list-item">Cart</li>
+                    <li class="footer-list-item">Wishlist</li>
+                    <li class="footer-list-item">Shop</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-title">Quick Link</h3>
+                <ul class="footer-list">
+                    <li class="footer-list-item">Privacy Policy</li>
+                    <li class="footer-list-item">Terms Of Use</li>
+                    <li class="footer-list-item">FAQ</li>
+                    <li class="footer-list-item">Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <div class="footer-copyright">&#169; Copyright 2024. All right reserved</div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/script/layout.js"></script>
-    <script src="/script/index.js"></script>
+
+    <script src="script/sign up.js"></script>
 </body>
 
 </html>

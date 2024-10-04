@@ -173,3 +173,65 @@
     margin-left: 70px;
     margin-top: 10px;
 }
+/* Responsive Design Adjustments */
+@media (max-width: 1080px) {
+    .cart_header, .cart_items, .button-container, .subtotal, .coupon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cart_item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart_item_price, .cart_item_qty, .cart_item_subtotal {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .cart_img {
+        width: 100px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .cart_header_title, .cart_header_price, .cart_header_quantity, .cart_header_subtotal {
+        display: none;
+    }
+
+    .coupon input, .coupon button, .subtotal button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .subtotal {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    .button-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .button-container .normal {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart_img {
+        width: 80px;
+    }
+
+    .subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .coupon {
+        width: 100%;
+    }
+}

@@ -107,35 +107,6 @@
     transform: scale(0.9);
 }
 
-.bullets {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    left: 120%;
-    transform: translateX(-50%);
-}
-
-.bullets li {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--color-gray);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-}
-
-.bullets li.active {
-    background-color: var(--color-primary);
-}
-
-
 
 
 /* services 2 */
@@ -159,4 +130,74 @@
 
 .service-p {
     font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+
+    .story-container,
+    .team-container,
+    .services-container {
+        grid-gap: 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .story-content-titel {
+        font-size: 3rem;
+    }
+
+    .story-content-p,
+    .service-pp,
+    .service-p {
+        font-size: 1.5rem;
+    }
+
+    .team-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .story-container,
+    .team-container,
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* لتوسيط العناصر */
+    }
+
+    .team-img-wrapper {
+        margin-bottom: 10px;
+        /* لإضافة مسافة بين الصورة والاسم */
+    }
+
+    .story-content-titel {
+        font-size: 2.5rem;
+    }
+
+    .story-content-p,
+    .service-pp,
+    .service-p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-img-wrapper {
+        height: 250px;
+    }
+
+    .team-name {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        margin: 0 5px;
+    }
 }

@@ -39,8 +39,8 @@
                             aria-label="Search">
                         <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass"></i></button>
                     </form>
-                    <i class="fa-regular fa-heart ms-3 nav-heart"></i>
-                    <i class="fa fa-cart-shopping ms-3 nav-cart"></i>
+                    <i class="fa-regular fa-heart ms-3 nav-heart actived"></i>
+                    <i class="fa fa-cart-shopping ms-3 nav-cart actived"></i>
                 </div>
             </div>
         </div>
@@ -53,21 +53,20 @@
                 <img src="./img/mob.png" alt="" class="sign-img">
             </div>
             <div class="sign-content">
-                <form action="" class="sign-form">
-                    <h2 class="form-title">Creat your account</h2>
+                <form onsubmit="signup(event)" class="sign-form">
+                    <h2 class="form-title">Create your account</h2>
                     <p class="sign-p">Enter your details below</p>
                     <div class="form-content">
-                        <input type="text" placeholder="Name" class="form-input">
+                        <input type="text" id="name" placeholder="Name" class="form-input" required>
                     </div>
                     <div class="form-content">
-                        <input type="email" placeholder="Email" class="form-input">
+                        <input type="email" id="email" placeholder="Email" class="form-input" required>
                     </div>
                     <div class="form-content form-pass">
-                        <input type="password" placeholder="Password" class="form-input">
+                        <input type="password" id="password" placeholder="Password" class="form-input" required>
                     </div>
                     <div class="form-content">
-                        <button class="form-btn"> <a href="#" class="form-link">Creat Account</a></button>
-
+                        <button type="submit" class="form-btn">Create Account</button>
                     </div>
                     <div class="form-content">
                         <span>Already have an account? <a href="./login.html" class="form-sign-link">Login</a></span>
@@ -75,8 +74,8 @@
                 </form>
             </div>
         </div>
-
     </section>
+
     <!-- end sign up -->
     <!-- Footer Start -->
     <footer class="footer">
@@ -128,8 +127,8 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/script/layout.js"></script>
-    <script src="/script/index.js"></script>
+
+    <script src="script/sign up.js"></script>
 </body>
 
 </html>
