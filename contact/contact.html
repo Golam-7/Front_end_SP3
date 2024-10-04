@@ -19,22 +19,29 @@
 
 <body>
 <!-- Navbar Start -->
-<nav class="nav">
-  <div class="container nav-container">
-    <a href="#" class="nav-logo">EXCLUSIVE</a>
-    <ul class="nav-list">
-      <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-      <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
-    </ul>
-    <div class="nav-items">
-      <form action="#" class="nav-form">
-        <input type="text" class="nav-input" placeholder="Search Here...">
-        <i class="nav-search fas fa-magnifying-glass"></i>
-      </form>
-      <i class="nav-heart fa-regular fa-heart"></i>
-      <i class="nav-cart fa fa-cart-shopping"></i>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid container">
+    <a class="navbar-brand nav-logo" href="#">EXCLUSIVE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+            aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+      </ul>
+      <div class="d-flex align-items-center nav-items">
+        <form class="d-flex nav-form">
+          <input class="form-control me-2 nav-input" type="search" placeholder="Search Here..."
+                 aria-label="Search">
+          <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass"></i></button>
+        </form>
+        <i class="fa-regular fa-heart ms-3 nav-heart actived"></i>
+        <i class="fa fa-cart-shopping ms-3 nav-cart actived"></i>
+      </div>
     </div>
   </div>
 </nav>
@@ -65,32 +72,32 @@
   </div>
 
   <div class="contact-form">
-    <form action="#" method="POST">
+    <form id="contactForm" action="#" method="POST">
       <div class="write">
-     <div class="name">
-       <input type="text" name="name" placeholder="Your Name *" required>
-     </div>
-      <div class="email">
-        <input type="email" name="email" placeholder="Your Email *" required>
-      </div>
-      <div class="phone">
-        <input type="text" name="phone" placeholder="Your Phone *">
-      </div>
-      </div>
-       <div>
-        <textarea name="message" placeholder="Your Message"style="height: 207px;
-    width: 737px;"></textarea>
-      <button type="submit">Send Message</button>
-       </div>
+        <div class="name">
+          <input type="text" id="name" name="name" placeholder="Your Name *" required>
+        </div>
+        <div class="email">
+          <input type="email" id="email" name="email" placeholder="Your Email *" required>
+        </div>
+        <div class="phone">
+          <input type="text" id="phone" name="phone" placeholder="Your Phone *">
+        </div>
+        <div>
+          <textarea id="message" name="message" placeholder="Your Message" style="height: 207px; width: 737px;"></textarea>
+          <button type="submit">Send Message</button>
+        </div>
     </form>
   </div>
+</div>
 </div>
 <!-- Footer Start -->
 <footer class="footer">
   <div class="container footer-container">
     <div class="footer-item">
       <a href="#" class="footer-logo">Exclusive</a>
-      <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build an online
+      <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build
+        an online
         store.</div>
     </div>
     <div class="footer-item">
@@ -120,13 +127,7 @@
         <li class="footer-list-item">Contact</li>
       </ul>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container footer-bottom-container">
-      <div class="footer-copyright">&#169; Copyright 2024. All right reserved</div>
-    </div>
-  </div>
-</footer>
-<!-- Footer End -->
+    <!-- Footer End -->
+<script src="/script/local_storage.js"></script>
 </body>
 </html>
