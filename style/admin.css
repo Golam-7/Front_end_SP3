@@ -149,8 +149,17 @@ body {
     .content {
         padding: 10px;
     }
+    .form-group {
+        flex-direction: column;
+    }
     .form-group .half-width {
         width: 100%;
+    }
+    .form-group .element-group {
+        width: 100%;
+    }
+    .form-group input[type="number"] {
+        width: 45%;
     }
 }
 }
