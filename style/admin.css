@@ -51,7 +51,7 @@ body {
     margin-bottom: 20px;
     border: 7px solid #f5f5f5;
 }
-.form-section h3 {
+.form-section h3, .header h3 {
     font-size: 22px;
     margin-bottom: 20px;
     color: #db4444;
@@ -95,13 +95,13 @@ body {
     justify-content: flex-end;
     margin-top: 20px;
 }
-.form-actions button {
+.form-actions button, button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-.form-actions .discard {
+.form-actions .discard, .discard {
     background-color: #e0e0e0;
     color: #333;
     margin-right: 10px;
@@ -130,6 +130,104 @@ body {
 
 /* End Location Store page */
 
+/* Start Shipping Store page */
+.table {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    /* display: block; */
+}
+.container-ship {
+    display: flex;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+.header a {
+    color: #db4444;
+    text-decoration: none;
+    font-size: 14px;
+}
+.zone {
+    margin-bottom: 20px;
+}
+.zone-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.zone-header img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.zone-header h2 {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+.zone-header p {
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+.zone-header .actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.zone-header .actions i {
+    color: #888;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.zone-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+.zone-table th, .zone-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+.zone-table th {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+}
+.zone-table td {
+    font-size: 14px;
+    color: #555;
+}
+.zone-table .actions i {
+    color: #888;
+    cursor: pointer;
+}
+.add-rate {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #db4444;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* End Shipping Store page */
+
 /* Media Queries */
 
 /* Medium Devices */
@@ -138,6 +236,16 @@ body {
     .container-store {
         flex-direction: column;
         font-size: 1.25rem;
+    }
+    .container-ship {
+        flex-direction: column;
+        font-size: 1.25rem;
+    }
+    .table {
+        width: auto;
+    }
+    .sidebar {
+        border: none;
     }
 
     /* Small Devices */
