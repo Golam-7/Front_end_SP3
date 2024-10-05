@@ -194,3 +194,57 @@ body {
 }
 
 /* playstation end */
+
+/* resposive */
+@media (min-width: 1200px) {
+  
+}
+ 
+ /* Medium devices (tablets, 768px and up) */
+ @media (min-width: 768px) and (max-width: 1199.98px) {
+  .thumbnail-images{
+    display: none;
+  }
+
+  .main-image{
+    height: 175px;
+    width: 400px;
+    padding-bottom: 280px;
+    margin: auto;
+  }
+  .product-page{
+    margin: auto;
+  }
+ }
+ 
+ /* Small devices (phones, less than 768px) */
+ @media (max-width: 767px) {
+  .main-image{
+    height: 75px;
+    width: 300px;
+    padding-bottom: 280px
+  }
+  .thumbnail-images{
+    display: none;
+  }
+  .swiper-wrapper{
+    display: flex;
+    flex-wrap:wrap;
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 120px;
+  }
+  .swiper-slide,{
+    width: 100%;
+  }
+  .product-details{
+    width:30px ;
+  }
+  .card-rating{
+    display: none;
+  }
+ .containerr{
+  margin-left: 30px;
+}
+ }
+ /* playstation end */
