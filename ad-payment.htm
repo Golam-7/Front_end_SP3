@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Layout</title>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../style/layout.css">
+  <link rel="stylesheet" href="../style/admin.css">
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid container">
+      <a class="navbar-brand nav-logo" href="#">EXCLUSIVE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+        </ul>
+        <div class="d-flex align-items-center nav-items">
+          <form class="d-flex nav-form">
+            <input class="form-control me-2 nav-input" type="search" placeholder="Search Here..." aria-label="Search">
+            <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass" title="Search"></i></button>
+          </form>
+          <i class="fa-regular fa-heart ms-3 nav-heart"></i>
+          <i class="fa fa-cart-shopping ms-3 nav-cart"></i>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- content start -->
+
+  <div class="container">
+    <div class="container-store">
+      <div class="sidebar">
+        <h2>Store Settings</h2>
+        <ul>
+          <li><a href="ad-settings.html">Store Details</a></li>
+          <li><a href="ad-payment.htm" class="active">Payments</a></li>
+          <li><a href="ad-shipping.html">Shipping and Delivery</a></li>
+          <li><a href="ad-location.html">Locations</a></li>
+        </ul>
+      </div>
+        <div class="billing-content">
+          <div class="card">
+            <!-- tital -->
+            <div class="card-header">
+              <h2>Billing Details</h2>
+            </div>
+            <!-- tital -->
+            <div class="card-body ">
+              <div class="form-check mb-0">
+                <input class="form-check-input" type="radio" id="paypal" name="billing" placeholder="PayPal">
+                <label class="form-check-label mb-0 d-block" for="paypal">
+                  <img src="../image/OIP.jpg" height="20" alt="">
+                </label>
+              </div>
+              <p class="me">Pay with PayPal, Apple Pay, PayPal Credit and much more</p>
+
+              <div class="form">
+                <input class="form-check-input" type="radio" value="" id="credit-card" checked="checked" name="billing">
+                <label class="form-check-label d-flex align-items-center mb-0" for="credit-card">
+                  <span class="Credit">Credit Card</span>
+                  <img class="d-none d-sm-inline-block ms-2 mt-lg-0" src="../image/icon-payment-methods.png" height="20"
+                    alt="">
+                </label>
+                <p class=" mb-4">Safe money transfer using your bank accounts. Visa, maestro, discover, american
+                  express.
+                </p>
+              </div>
+
+              <div class="flex">
+                <div class="col-sm-6">
+                  <label class="card-num" for="cardNumber">Card Number</label>
+                  <input class="form-control" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" type="text">
+                </div>
+                <div class="col-sm-6">
+                  <label class="form-label" for="cardName">Name of Card</label>
+                  <input class="form-control" id="cardName" placeholder="John Doe" type="text">
+                </div>
+              </div>
+              <div class="gx-3">
+                <div class="col-6 col-sm-3">
+                  <label class="form-label" for="inputCountry">Country</label>
+                  <input class="form-select mb-3" id="inputCountry" list="country-list" placeholder="Country">
+                  <datalist class="scrollbar" id="country-list">
+                    <option>Austalia</option>
+                    <option>Bangladesh</option>
+                    <option>Belarus</option>
+                    <option>Brazil</option>
+                    <option>Canada</option>
+                    <option>China</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>India</option>
+                    <option>Indonesia</option>
+                    <option>Israel</option>
+                    <option>Italy</option>
+                    <option>Japan</option>
+                    <option>Korea, Republic of</option>
+                    <option>Mexico</option>
+                    <option>Philippines</option>
+                    <option>Russian Federation</option>
+                    <option>South Africa</option>
+                    <option>Thailand</option>
+                    <option>Turkey</option>
+                    <option>Ukraine</option>
+                    <option>United Arab Emirates</option>
+                    <option>United Kingdom</option>
+                    <option>United States</option>
+                  </datalist>
+                </div>
+                <div class="col-6 col-sm-3">
+                  <label class="form-label " for="zipCode">Zip Code</label>
+                  <input class="form-control" id="zipCode" placeholder="1234" type="text">
+                </div>
+                <div class="col-6 col-sm-3">
+                  <label class="form-label " for="expDate">Exp Date</label>
+                  <input class="form-control" id="expDate" placeholder="15/2024" type="text">
+                </div>
+                <div class="col-6 col-sm-3">
+                  <label class="form-label " for="cvv">CVV
+                    <span class="ms-1" data-bs-toggle="tooltip" data-bs-placement="top" title="Card verification value">
+                      <span class="fa fa-question-circle"></span>
+                    </span>
+                  </label>
+                  <input class="form-control" id="cvv" placeholder="123" maxlength="3" type="text">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="discard" type="button" >Discard</button>
+            <button class="save" type="button" onclick="saveFormData()">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- content end -->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-item">
+        <a href="#" class="footer-logo">Exclusive</a>
+        <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build an online
+          store.</div>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer-title">Support</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</li>
+          <li class="footer-list-item">exclusive@gmail.com</li>
+          <li class="footer-list-item">+88015-88888-9999</li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer-title">Account</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">My Account</li>
+          <li class="footer-list-item">Login / Register</li>
+          <li class="footer-list-item">Cart</li>
+          <li class="footer-list-item">Wishlist</li>
+          <li class="footer-list-item">Shop</li>
+        </ul>
+      </div>
+      <div class="footer-item">
+        <h3 class="footer-title">Quick Link</h3>
+        <ul class="footer-list">
+          <li class="footer-list-item">Privacy Policy</li>
+          <li class="footer-list-item">Terms Of Use</li>
+          <li class="footer-list-item">FAQ</li>
+          <li class="footer-list-item">Contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-container">
+        <div class="footer-copyright">&#169; Copyright 2024. All right reserved</div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/script/layout.js"></script>
+  <script src="/script/payment.js"></script>
+</body>
+
+</html>
