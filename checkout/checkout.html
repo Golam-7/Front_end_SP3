@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stayel/checkout.css">
-    <link rel="stylesheet" href="stayel/layout.css">
+    <link rel="stylesheet" href="../style/checkout.css">
+    <link rel="stylesheet" href="../style/layout.css">
     <title>Checkout Page</title>
 </head>
 <body>
 <header class="header">
     <!-- Navbar Start -->
-    <nav class="nav">
-        <div class="container nav-container">
-            <a href="#" class="nav-logo">EXCLUSIVE</a>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Sign up</a></li>
-            </ul>
-            <div class="nav-items">
-                <form action="#" class="nav-form">
-                    <input type="text" class="nav-input" placeholder="Search Here...">
-                    <i class="nav-search fas fa-magnifying-glass"></i>
-                </form>
-                <i class="nav-heart fa-regular fa-heart"></i>
-                <i class="nav-cart fa fa-cart-shopping"></i>
+    <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid container">
+            <a class="navbar-brand nav-logo" href="#">EXCLUSIVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Sign up</a></li>
+                </ul>
+                <div class="d-flex align-items-center nav-items">
+                    <form class="d-flex nav-form">
+                        <input class="form-control me-2 nav-input" type="search" placeholder="Search Here..."
+                               aria-label="Search">
+                        <button class="btn nav-search" type="submit"><i class="fas fa-magnifying-glass"></i></button>
+                    </form>
+                    <i class="fa-regular fa-heart ms-3 nav-heart actived"></i>
+                    <i class="fa fa-cart-shopping ms-3 nav-cart actived"></i>
+                </div>
             </div>
         </div>
     </nav>
-    <!-- Navbar End -->
+    </div>
+        <!-- Navbar End -->
 </header>
 
 <main>
@@ -42,32 +51,33 @@
             <h2>Billing Details</h2>
             <form>
                 <label>First Name <span class="star">*</span></label>
-                <input type="text" required>
+                <input type="text" name="firstName" required>
                 <label>Company Name</label>
-                <input type="text">
+                <input type="text" name="companyName">
                 <label>Street Address<span class="star">*</span></label>
-                <input type="text" required>
+                <input type="text" name="streetAddress" required>
                 <label>Apartment, floor, etc. (optional)</label>
-                <input type="text">
+                <input type="text" name="apartment">
                 <label>Town/City<span class="star">*</span></label>
-                <input type="text" required>
+                <input type="text" name="townCity" required>
                 <label>Phone Number<span class="star">*</span></label>
-                <input type="tel" required>
+                <input type="tel" name="phoneNumber" required>
                 <label>Email Address<span class="star">*</span></label>
-                <input type="email" required>
-
+                <input type="email" name="emailAddress" required>
+                <input type="checkbox" id="save-info-checkbox">
+                <label for="save-info-checkbox" id="save-info-label">Save this information for faster check-out next time</label>
             </form>
         </div>
 
         <div class="order-summary">
             <div class="order-items">
                 <div class="item">
-                    <img src="img/g92-2-500x500%201.png"alt="Monitor">
+                    <img src="../image/g92-2-500x500 1.png"alt="Monitor">
                     <p>HI Gamepad</p>
                     <span style="margin-top: 20px;">$650</span>
                 </div>
                 <div class="item">
-                    <img src="img/Monitor-Cart-Small.png" alt="HI Gamepad">
+                    <img src="../image/Monitor-Cart-Small.png" alt="HI Gamepad">
                     <p>LCD Monitor</p>
                     <span style="margin-top: 20px;">$1100</span>
                 </div>
@@ -89,7 +99,7 @@
 
             <div class="payment-method">
                 <label><input type="radio" name="payment" checked><span class="Bank"> Bank</span>
-                <img src="img/Frame%20834.png" class="img-bank">
+                <img src="../image/83.png" class="img-bank">
                 </label>
                 <label><input type="radio" name="payment"><span class="Cash"> Cash on delivery</span> </label>
             </div>
@@ -108,7 +118,8 @@
         <div class="container footer-container">
             <div class="footer-item">
                 <a href="#" class="footer-logo">Exclusive</a>
-                <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build an online
+                <div class="footer-p">Shopify is a user-friendly e-commerce platform that helps small businesses build
+                    an online
                     store.</div>
             </div>
             <div class="footer-item">
@@ -138,14 +149,8 @@
                     <li class="footer-list-item">Contact</li>
                 </ul>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container footer-bottom-container">
-                <div class="footer-copyright">&#169; Copyright 2024. All right reserved</div>
-            </div>
-        </div>
-    </footer>
-    <!-- Footer End -->
+            <!-- Footer End -->
 </main>
+<script src="../script/checkout.js"></script>
 </body>
 </html>

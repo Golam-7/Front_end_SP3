@@ -289,3 +289,39 @@
     color: #666;
     font-size: 14px;
 }
+
+@media (max-width: 1200px) {
+    .checkout-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .billing-details, .order-summary {
+        width: 100%;
+        padding: 0;
+    }
+
+    .billing-details input {
+        width: 100%;
+    }
+
+    .order-items .item img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .priceTotal, .price {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-section {
+        padding: 10px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
