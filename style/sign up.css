@@ -1,0 +1,92 @@
+:root {
+    --font-main: "Inter", "sans-serif";
+    --color-primary: #db4444;
+    --color-dark: #000000;
+    --color-gray: #7d8184;
+    --color-secondry-white: #f5f5f5;
+    --color-white: #ffffff;
+}
+
+/* sign up start */
+.sign-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.sign-img {
+    width: 50%;
+    height: 100%;
+}
+
+.sign-img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sign-content {
+    width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .sign-img {
+        display: none;
+    }
+
+    .sign-content {
+        width: 100%;
+    }
+}
+
+.sign-content {
+    padding: 10rem;
+}
+
+.form-title {
+    font-size: 3.2rem;
+}
+
+.sign.p {
+    margin: 2rem 0rem;
+}
+
+.form-content {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem 0.6rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color-gray);
+
+}
+
+.form-pass {
+    margin-bottom: 3rem;
+}
+
+.form-btn {
+    width: 100%;
+    padding: 1.3rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    outline: none;
+    margin-bottom: 1.5rem;
+
+}
+
+.form-link {
+    color: var(--color-white);
+}
+
+.form-content>span {
+    margin-top: 2rem;
+}
+
+/* sign up end */
