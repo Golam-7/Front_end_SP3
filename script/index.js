@@ -486,7 +486,9 @@ fetch(api)
           <div class="product">
           <div class="box">
             <div class="card-top">
-              <img src="${data[i].image}" alt="${data[i].title}" class="card-img">
+              <img src="${data[i].image}" alt="${
+          data[i].title
+        }" class="card-img">
               <div class="card-tag new">NEW</div>
               <div class="card-icons">
                 <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -503,7 +505,7 @@ fetch(api)
               </div>
             </div>
             <div class="card-body">
-              <h3 class="card-title">${data[i].title}</h3>
+              <h3 class="card-title">${truncate(data[i].title, 30)}</h3>
               <p class="card-price">$${data[i].price}</p>
               <div class="card-rating">
                 <div class="card-stars">
@@ -524,7 +526,9 @@ fetch(api)
           <div class="product">
           <div class="box">
             <div class="card-top">
-              <img src="${data[i].image}" alt="${data[i].title}" class="card-img">
+              <img src="${data[i].image}" alt="${
+          data[i].title
+        }" class="card-img">
               <div class="card-tag new">NEW</div>
               <div class="card-icons">
                 <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -541,7 +545,7 @@ fetch(api)
               </div>
             </div>
             <div class="card-body">
-              <h3 class="card-title">${data[i].title}</h3>
+              <h3 class="card-title">${truncate(data[i].title, 30)}</h3>
               <p class="card-price">$${data[i].price}</p>
               <div class="card-rating">
                 <div class="card-stars">
@@ -562,7 +566,9 @@ fetch(api)
           <div class="product">
           <div class="box">
             <div class="card-top">
-              <img src="${data[i].image}" alt="${data[i].title}" class="card-img">
+              <img src="${data[i].image}" alt="${
+          data[i].title
+        }" class="card-img">
               <div class="card-tag new">NEW</div>
               <div class="card-icons">
                 <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -579,7 +585,7 @@ fetch(api)
               </div>
             </div>
             <div class="card-body">
-              <h3 class="card-title">${data[i].title}</h3>
+              <h3 class="card-title">${truncate(data[i].title, 30)}</h3>
               <p class="card-price">$${data[i].price}</p>
               <div class="card-rating">
                 <div class="card-stars">
@@ -600,7 +606,9 @@ fetch(api)
           <div class="product">
           <div class="box">
             <div class="card-top">
-              <img src="${data[i].image}" alt="${data[i].title}" class="card-img">
+              <img src="${data[i].image}" alt="${
+          data[i].title
+        }" class="card-img">
               <div class="card-tag new">NEW</div>
               <div class="card-icons">
                 <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -617,7 +625,7 @@ fetch(api)
               </div>
             </div>
             <div class="card-body">
-              <h3 class="card-title">${data[i].title}</h3>
+              <h3 class="card-title">${truncate(data[i].title, 30)}</h3>
               <p class="card-price">$${data[i].price}</p>
               <div class="card-rating">
                 <div class="card-stars">
@@ -638,7 +646,9 @@ fetch(api)
           <div class="product">
           <div class="box">
             <div class="card-top">
-              <img src="${data[i].image}" alt="${data[i].title}" class="card-img">
+              <img src="${data[i].image}" alt="${
+          data[i].title
+        }" class="card-img">
               <div class="card-tag new">NEW</div>
               <div class="card-icons">
                 <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -655,7 +665,7 @@ fetch(api)
               </div>
             </div>
             <div class="card-body">
-              <h3 class="card-title">${data[i].title}</h3>
+              <h3 class="card-title">${truncate(data[i].title, 30)}</h3>
               <p class="card-price">$${data[i].price}</p>
               <div class="card-rating">
                 <div class="card-stars">
