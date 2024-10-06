@@ -56,87 +56,89 @@
         </ul>
       </div>
       <div class="content">
-        <div class="form-section">
-          <h3>Location Name</h3>
-          <div class="form-group">
-            <label for="store-name">Location Name</label>
-            <input type="text" id="store-name" placeholder="Shop Location">
-          </div>
-          <div>
-            <input type="checkbox" id="fulfill-orders">
-            <label for="fulfill-orders">Fulfill online orders from this location</label>
-          </div>
-          <div class="info-box">
-            <i class="fas fa-info-circle"></i>
-            <span>This is your default location. To change whether you fulfill online orders from this location, select
-              another default location first.</span>
-          </div>
-        </div>
-        <div class="form-section">
-          <h3>Address</h3>
-          <div class="form-group">
-            <label for="country-region">Country/region</label>
-            <select id="country_region" aria-hidden="true" data-placeholder="Country/Region">
-              <option value="" data-select2-id="2">United States</option>
-              <option value="Australia">Australia</option>
-              <option value="Bangladesh">Bangladesh</option>
-              <option value="Belarus">Belarus</option>
-              <option value="Brazil">Brazil</option>
-              <option value="Canada">Canada</option>
-              <option value="China">China</option>
-              <option value="France">France</option>
-              <option value="Germany">Germany</option>
-              <option value="India">India</option>
-              <option value="Indonesia">Indonesia</option>
-              <option value="Israel">Israel</option>
-              <option value="Italy">Italy</option>
-              <option value="Japan">Japan</option>
-              <option value="Korea">Korea, Republic of</option>
-              <option value="Mexico">Mexico</option>
-              <option value="Philippines">Philippines</option>
-              <option value="Russia">Russian Federation</option>
-              <option value="South Africa">South Africa</option>
-              <option value="Thailand">Thailand</option>
-              <option value="Turkey">Turkey</option>
-              <option value="Ukraine">Ukraine</option>
-              <option value="United Arab Emirates">United Arab Emirates</option>
-              <option value="United Kingdom">United Kingdom</option>
-              <option value="United States">United States</option>
-            </select>
-          </div>
-          <div class="form-group" style="display: flex;">
-            <div class="element-group">
-              <label for="address">Address</label>
-              <input type="text" id="address" placeholder="1234 Main St">
+        <form id="myform">
+          <div class="form-section">
+            <h3>Location Name</h3>
+            <div class="form-group">
+              <label for="store-name">Location Name</label>
+              <input type="text" id="store-name" placeholder="Shop Location">
             </div>
-            <div class="element-group">
-              <label for="apartment">Apartment, suite, etc.</label>
-              <input type="text" id="apartment" placeholder="Apartment, suite, etc.">
+            <div>
+              <input type="checkbox" id="fulfill-orders">
+              <label for="fulfill-orders">Fulfill online orders from this location</label>
             </div>
-            <div class="element-group">
-              <label for="apartment">Phone</label>
-              <input type="number" id="phone" placeholder="+123456789">
+            <div class="info-box">
+              <i class="fas fa-info-circle"></i>
+              <span>This is your default location. To change whether you fulfill online orders from this location,
+                select
+                another default location first.</span>
             </div>
           </div>
-          <div class="form-group" style="display: flex;">
-            <div class="element-group">
-              <label for="city">City</label>
-              <input type="text" id="city" placeholder="New York">
+          <div class="form-section">
+            <h3>Address</h3>
+            <div class="form-group">
+              <label for="country-region">Country/region</label>
+              <select id="country_region" aria-hidden="true" data-placeholder="Country/Region">
+                <option value="" data-select2-id="2">United States</option>
+                <option value="Australia">Australia</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Belarus">Belarus</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Korea">Korea, Republic of</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Philippines">Philippines</option>
+                <option value="Russia">Russian Federation</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+              </select>
             </div>
-            <div class="element-group">
-              <label for="state">State</label>
-              <input type="text" id="state" placeholder="NY">
+            <div class="form-group" style="display: flex;">
+              <div class="element-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="1234 Main St">
+              </div>
+              <div class="element-group">
+                <label for="apartment">Apartment, suite, etc.</label>
+                <input type="text" id="apartment" placeholder="Apartment, suite, etc.">
+              </div>
+              <div class="element-group">
+                <label for="apartment">Phone</label>
+                <input type="number" id="phone" placeholder="+123456789">
+              </div>
             </div>
-            <div class="element-group">
-              <label for="pin-code">PIN Code</label>
-              <input type="number" id="pin-code" placeholder="10001">
+            <div class="form-group" style="display: flex;">
+              <div class="element-group">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="New York">
+              </div>
+              <div class="element-group">
+                <label for="state">State</label>
+                <input type="text" id="state" placeholder="NY">
+              </div>
+              <div class="element-group">
+                <label for="pin-code">PIN Code</label>
+                <input type="number" id="pin-code" placeholder="10001">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form-actions">
-          <button class="discard" type="button">Discard</button>
-          <button class="save" type="button">Save Changes</button>
-        </div>
+          <div class="form-actions">
+            <button class="discard" type="button">Discard</button>
+            <button class="save" type="button">Save Changes</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -189,6 +191,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/script/layout.js"></script>
+  <script src="script/ad-location.js"></script>
 </body>
 
 </html>
