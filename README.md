@@ -11,6 +11,7 @@ This project is a fully responsive e-commerce website built using HTML, CSS, Jav
 - **Add Payment**: Users can add and manage their payment methods.
 - **Settings**: User profile settings.
 - **Shopping Cart**: Add items to the cart and manage shopping lists.
+- **Cart Page**: Review added items, adjust quantities, and proceed to checkout.
 - **Checkout**: Proceed to payment and place orders.
 - **Contact Page**: A form for customer inquiries.
 - **Login/Signup Pages**: User authentication and registration.
