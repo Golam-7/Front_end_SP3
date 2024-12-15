@@ -33,9 +33,7 @@ This project is a fully responsive e-commerce website built using HTML, CSS, Jav
 
 This project was collaboratively developed by the following team members:
 
-- **Mena Ehab** - [@menaehab](https://github.com/menaehab)
-- **Abdo Yahya** - [@3bdo-Yahya](https://github.com/3bdo-Yahya)
-- **Ahmed Koush** - [@3koush](https://github.com/3koush)
-- **Abdelhady** - [@3bdelhaady](https://github.com/3bdelhaady)
-- **Mai Mohammed** - [@MaiMohammed1](https://github.com/MaiMohammed1)
-- **Menna Fathi** - [@MennaFathi87](https://github.com/MennaFathi87)
+- **Md Golam Sharoar Saymum** - [@Golam-7](https://github.com/Golam-7)
+- **Md. Shariful Islam** - [@scr33nshake](https://github.com/scr33nshake)
+- **Tashdid Rahman** - [@Tashdid704](https://github.com/Tashdid704)
+
